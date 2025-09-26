@@ -1,0 +1,497 @@
+Command: C:\Users\Wipat\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Wipat\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Wipat\Week-11-Special_topics\Week-11-Special_topics\adc_enhanced_exp3\build\adc_enhanced_exp3.elf C:\Users\Wipat\Week-11-Special_topics\Week-11-Special_topics\adc_enhanced_exp3\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Wipat\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Wipat\esp\v5.5.1\esp-idf\tools\idf.py'
+	�"%=5
+[0;32mI (40) b�ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 26 2025 11:54:05[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a71ch ( 42780) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a744 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001cb44 vaddr=40080000 size=034d4h ( 13524) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14e60h ( 85600) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=00034e88 vaddr=400834d4 size=09adch ( 39644) load[0m
+[0;32mI (159) esp_image: segment 5: paddr=0003e96c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     adc_enhanced_exp3[0m
+[0;32mI (190) app_init: App version:      63c869e-dirty[0m
+[0;32mI (194) app_init: Compile time:     Sep 26 2025 11:52:56[0m
+[0;32mI (200) app_init: ELF file SHA256:  b9bb22150...[0m
+[0;32mI (204) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (215) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (220) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 3FFB2D00 len 0002D300 (180 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (256) spi_flash: flash io: dio[0m
+[0;33mW (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (271) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) ADC_ENHANCED: eFuse Two Point: ไม่รองรับ[0m
+[0;32mI (289) ADC_ENHANCED: eFuse Vref: รองรับ[0m
+[0;32mI (289) ADC_ENHANCED: ใช้การปรับเทียบแบบ eFuse Vref[0m
+[0;32mI (299) ADC_ENHANCED: ทดสอบการปรับปรุงความแม่นยำ ADC[0m
+[0;32mI (309) ADC_ENHANCED: เทคนิค: Oversampling + Moving Average Filter[0m
+[0;32mI (319) ADC_ENHANCED: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (319) ADC_ENHANCED: Oversamples: 100, Filter Size: 10[0m
+[0;32mI (319) ADC_ENHANCED: ----------------------------------------[0m
+[0;32mI (339) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (339) ADC_ENHANCED: Raw ADC: 3281 (2.782V)[0m
+[0;32mI (339) ADC_ENHANCED: Oversampled: 3435.3 (2.865V)[0m
+[0;32mI (339) ADC_ENHANCED: Filtered: 3435.3 (2.865V)[0m
+[0;32mI (349) ADC_ENHANCED: [0m
+[0;32mI (2349) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (2349) ADC_ENHANCED: Raw ADC: 3429 (2.862V)[0m
+[0;32mI (2349) ADC_ENHANCED: Oversampled: 3410.2 (2.852V)[0m
+[0;32mI (2359) ADC_ENHANCED: Filtered: 3432.8 (2.863V)[0m
+[0;32mI (2359) ADC_ENHANCED: [0m
+[0;32mI (4359) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (4359) ADC_ENHANCED: Raw ADC: 3360 (2.825V)[0m
+[0;32mI (4359) ADC_ENHANCED: Oversampled: 3344.4 (2.817V)[0m
+[0;32mI (4369) ADC_ENHANCED: Filtered: 3423.7 (2.858V)[0m
+[0;32mI (4369) ADC_ENHANCED: [0m
+[0;32mI (6369) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (6369) ADC_ENHANCED: Raw ADC: 3291 (2.788V)[0m
+[0;32mI (6369) ADC_ENHANCED: Oversampled: 3354.0 (2.822V)[0m
+[0;32mI (6379) ADC_ENHANCED: Filtered: 3415.6 (2.854V)[0m
+[0;32mI (6379) ADC_ENHANCED: [0m
+[0;32mI (8379) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (8379) ADC_ENHANCED: Raw ADC: 3435 (2.865V)[0m
+[0;32mI (8379) ADC_ENHANCED: Oversampled: 3415.9 (2.854V)[0m
+[0;32mI (8389) ADC_ENHANCED: Filtered: 3413.7 (2.853V)[0m
+[0;32mI (8389) ADC_ENHANCED: [0m
+[0;32mI (10389) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (10389) ADC_ENHANCED: Raw ADC: 3318 (2.803V)[0m
+[0;32mI (10389) ADC_ENHANCED: Oversampled: 3303.6 (2.794V)[0m
+[0;32mI (10399) ADC_ENHANCED: Filtered: 3400.5 (2.846V)[0m
+[0;32mI (10399) ADC_ENHANCED: [0m
+[0;32mI (12399) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (12399) ADC_ENHANCED: Raw ADC: 3463 (2.879V)[0m
+[0;32mI (12399) ADC_ENHANCED: Oversampled: 3447.6 (2.871V)[0m
+[0;32mI (12409) ADC_ENHANCED: Filtered: 3401.7 (2.847V)[0m
+[0;32mI (12409) ADC_ENHANCED: [0m
+[0;32mI (14409) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (14409) ADC_ENHANCED: Raw ADC: 3350 (2.820V)[0m
+[0;32mI (14409) ADC_ENHANCED: Oversampled: 3333.2 (2.811V)[0m
+[0;32mI (14419) ADC_ENHANCED: Filtered: 3391.5 (2.842V)[0m
+[0;32mI (14419) ADC_ENHANCED: [0m
+[0;32mI (16419) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (16419) ADC_ENHANCED: Raw ADC: 3487 (2.891V)[0m
+[0;32mI (16419) ADC_ENHANCED: Oversampled: 3469.1 (2.882V)[0m
+[0;32mI (16429) ADC_ENHANCED: Filtered: 3394.9 (2.843V)[0m
+[0;32mI (16429) ADC_ENHANCED: [0m
+[0;32mI (18429) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (18429) ADC_ENHANCED: Raw ADC: 3361 (2.826V)[0m
+[0;32mI (18429) ADC_ENHANCED: Oversampled: 3341.8 (2.815V)[0m
+[0;32mI (18439) ADC_ENHANCED: Filtered: 3385.5 (2.839V)[0m
+[0;32mI (18439) ADC_ENHANCED: [0m
+[0;32mI (20439) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (20439) ADC_ENHANCED: Raw ADC: 3486 (2.891V)[0m
+[0;32mI (20439) ADC_ENHANCED: Oversampled: 3467.3 (2.881V)[0m
+[0;32mI (20449) ADC_ENHANCED: Filtered: 3388.7 (2.840V)[0m
+[0;32mI (20449) ADC_ENHANCED: [0m
+[0;32mI (22449) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (22449) ADC_ENHANCED: Raw ADC: 3373 (2.832V)[0m
+[0;32mI (22449) ADC_ENHANCED: Oversampled: 3357.1 (2.824V)[0m
+[0;32mI (22459) ADC_ENHANCED: Filtered: 3383.4 (2.837V)[0m
+[0;32mI (22459) ADC_ENHANCED: [0m
+[0;32mI (24459) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (24459) ADC_ENHANCED: Raw ADC: 3517 (2.906V)[0m
+[0;32mI (24459) ADC_ENHANCED: Oversampled: 3494.8 (2.895V)[0m
+[0;32mI (24469) ADC_ENHANCED: Filtered: 3398.5 (2.845V)[0m
+[0;32mI (24469) ADC_ENHANCED: [0m
+[0;32mI (26469) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (26469) ADC_ENHANCED: Raw ADC: 3375 (2.833V)[0m
+[0;32mI (26469) ADC_ENHANCED: Oversampled: 3358.2 (2.824V)[0m
+[0;32mI (26479) ADC_ENHANCED: Filtered: 3398.9 (2.845V)[0m
+[0;32mI (26479) ADC_ENHANCED: [0m
+[0;32mI (28479) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (28479) ADC_ENHANCED: Raw ADC: 3504 (2.900V)[0m
+[0;32mI (28479) ADC_ENHANCED: Oversampled: 3485.1 (2.890V)[0m
+[0;32mI (28489) ADC_ENHANCED: Filtered: 3405.8 (2.849V)[0m
+[0;32mI (28489) ADC_ENHANCED: [0m
+[0;32mI (30489) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (30489) ADC_ENHANCED: Raw ADC: 3371 (2.831V)[0m
+[0;32mI (30489) ADC_ENHANCED: Oversampled: 3352.7 (2.821V)[0m
+[0;32mI (30499) ADC_ENHANCED: Filtered: 3410.7 (2.852V)[0m
+[0;32mI (30499) ADC_ENHANCED: [0m
+[0;32mI (32499) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (32499) ADC_ENHANCED: Raw ADC: 3509 (2.902V)[0m
+[0;32mI (32499) ADC_ENHANCED: Oversampled: 3487.9 (2.891V)[0m
+[0;32mI (32509) ADC_ENHANCED: Filtered: 3414.7 (2.854V)[0m
+[0;32mI (32509) ADC_ENHANCED: [0m
+[0;32mI (34509) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (34509) ADC_ENHANCED: Raw ADC: 3352 (2.821V)[0m
+[0;32mI (34509) ADC_ENHANCED: Oversampled: 3339.5 (2.814V)[0m
+[0;32mI (34519) ADC_ENHANCED: Filtered: 3415.4 (2.854V)[0m
+[0;32mI (34519) ADC_ENHANCED: [0m
+[0;32mI (36519) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (36519) ADC_ENHANCED: Raw ADC: 3462 (2.879V)[0m
+[0;32mI (36519) ADC_ENHANCED: Oversampled: 3443.3 (2.869V)[0m
+[0;32mI (36529) ADC_ENHANCED: Filtered: 3412.8 (2.853V)[0m
+[0;32mI (36529) ADC_ENHANCED: [0m
+[0;32mI (38529) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (38529) ADC_ENHANCED: Raw ADC: 3328 (2.808V)[0m
+[0;32mI (38529) ADC_ENHANCED: Oversampled: 3311.8 (2.799V)[0m
+[0;32mI (38539) ADC_ENHANCED: Filtered: 3409.8 (2.851V)[0m
+[0;32mI (38539) ADC_ENHANCED: [0m
+[0;32mI (40539) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (40539) ADC_ENHANCED: Raw ADC: 3434 (2.864V)[0m
+[0;32mI (40539) ADC_ENHANCED: Oversampled: 3413.8 (2.853V)[0m
+[0;32mI (40549) ADC_ENHANCED: Filtered: 3404.4 (2.848V)[0m
+[0;32mI (40549) ADC_ENHANCED: [0m
+[0;32mI (42549) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (42549) ADC_ENHANCED: Raw ADC: 3283 (2.783V)[0m
+[0;32mI (42549) ADC_ENHANCED: Oversampled: 3410.8 (2.852V)[0m
+[0;32mI (42559) ADC_ENHANCED: Filtered: 3409.8 (2.851V)[0m
+[0;32mI (42559) ADC_ENHANCED: [0m
+[0;32mI (44559) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (44559) ADC_ENHANCED: Raw ADC: 3382 (2.837V)[0m
+[0;32mI (44559) ADC_ENHANCED: Oversampled: 3365.0 (2.827V)[0m
+[0;32mI (44569) ADC_ENHANCED: Filtered: 3396.8 (2.844V)[0m
+[0;32mI (44569) ADC_ENHANCED: [0m
+[0;32mI (46569) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (46569) ADC_ENHANCED: Raw ADC: 3485 (2.890V)[0m
+[0;32mI (46569) ADC_ENHANCED: Oversampled: 3464.7 (2.880V)[0m
+[0;32mI (46579) ADC_ENHANCED: Filtered: 3407.4 (2.850V)[0m
+[0;32mI (46579) ADC_ENHANCED: [0m
+[0;32mI (48579) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (48579) ADC_ENHANCED: Raw ADC: 3328 (2.808V)[0m
+[0;32mI (48579) ADC_ENHANCED: Oversampled: 3310.9 (2.798V)[0m
+[0;32mI (48589) ADC_ENHANCED: Filtered: 3390.0 (2.841V)[0m
+[0;32mI (48589) ADC_ENHANCED: [0m
+[0;32mI (50589) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (50589) ADC_ENHANCED: Raw ADC: 3395 (2.844V)[0m
+[0;32mI (50589) ADC_ENHANCED: Oversampled: 3377.2 (2.834V)[0m
+[0;32mI (50599) ADC_ENHANCED: Filtered: 3392.5 (2.842V)[0m
+[0;32mI (50599) ADC_ENHANCED: [0m
+[0;32mI (52599) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (52599) ADC_ENHANCED: Raw ADC: 3451 (2.873V)[0m
+[0;32mI (52599) ADC_ENHANCED: Oversampled: 3434.6 (2.864V)[0m
+[0;32mI (52609) ADC_ENHANCED: Filtered: 3387.2 (2.840V)[0m
+[0;32mI (52609) ADC_ENHANCED: [0m
+[0;32mI (54609) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (54609) ADC_ENHANCED: Raw ADC: 3279 (2.781V)[0m
+[0;32mI (54609) ADC_ENHANCED: Oversampled: 3474.1 (2.885V)[0m
+[0;32mI (54619) ADC_ENHANCED: Filtered: 3400.6 (2.846V)[0m
+[0;32mI (54619) ADC_ENHANCED: [0m
+[0;32mI (56619) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (56619) ADC_ENHANCED: Raw ADC: 3327 (2.808V)[0m
+[0;32mI (56619) ADC_ENHANCED: Oversampled: 3309.5 (2.798V)[0m
+[0;32mI (56629) ADC_ENHANCED: Filtered: 3387.2 (2.840V)[0m
+[0;32mI (56629) ADC_ENHANCED: [0m
+[0;32mI (58629) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (58629) ADC_ENHANCED: Raw ADC: 3360 (2.825V)[0m
+[0;32mI (58629) ADC_ENHANCED: Oversampled: 3342.7 (2.816V)[0m
+[0;32mI (58639) ADC_ENHANCED: Filtered: 3390.3 (2.841V)[0m
+[0;32mI (58639) ADC_ENHANCED: [0m
+[0;32mI (60639) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (60639) ADC_ENHANCED: Raw ADC: 3382 (2.837V)[0m
+[0;32mI (60639) ADC_ENHANCED: Oversampled: 3368.7 (2.830V)[0m
+[0;32mI (60649) ADC_ENHANCED: Filtered: 3385.8 (2.839V)[0m
+[0;32mI (60649) ADC_ENHANCED: [0m
+[0;32mI (62649) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (62649) ADC_ENHANCED: Raw ADC: 3381 (2.836V)[0m
+[0;32mI (62649) ADC_ENHANCED: Oversampled: 3368.1 (2.830V)[0m
+[0;32mI (62659) ADC_ENHANCED: Filtered: 3381.6 (2.836V)[0m
+[0;32mI (62659) ADC_ENHANCED: [0m
+[0;32mI (64659) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (64659) ADC_ENHANCED: Raw ADC: 3367 (2.829V)[0m
+[0;32mI (64659) ADC_ENHANCED: Oversampled: 3354.3 (2.822V)[0m
+[0;32mI (64669) ADC_ENHANCED: Filtered: 3380.5 (2.836V)[0m
+[0;32mI (64669) ADC_ENHANCED: [0m
+[0;32mI (66669) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (66669) ADC_ENHANCED: Raw ADC: 3343 (2.816V)[0m
+[0;32mI (66669) ADC_ENHANCED: Oversampled: 3326.7 (2.807V)[0m
+[0;32mI (66679) ADC_ENHANCED: Filtered: 3366.7 (2.828V)[0m
+[0;32mI (66679) ADC_ENHANCED: [0m
+[0;32mI (68679) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (68679) ADC_ENHANCED: Raw ADC: 3285 (2.784V)[0m
+[0;32mI (68679) ADC_ENHANCED: Oversampled: 3403.8 (2.848V)[0m
+[0;32mI (68689) ADC_ENHANCED: Filtered: 3376.0 (2.833V)[0m
+[0;32mI (68689) ADC_ENHANCED: [0m
+[0;32mI (70689) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (70689) ADC_ENHANCED: Raw ADC: 3466 (2.881V)[0m
+[0;32mI (70689) ADC_ENHANCED: Oversampled: 3447.9 (2.871V)[0m
+[0;32mI (70699) ADC_ENHANCED: Filtered: 3383.0 (2.837V)[0m
+[0;32mI (70699) ADC_ENHANCED: [0m
+[0;32mI (72699) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (72699) ADC_ENHANCED: Raw ADC: 3387 (2.840V)[0m
+[0;32mI (72699) ADC_ENHANCED: Oversampled: 3367.1 (2.829V)[0m
+[0;32mI (72709) ADC_ENHANCED: Filtered: 3376.3 (2.834V)[0m
+[0;32mI (72709) ADC_ENHANCED: [0m
+[0;32mI (74709) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (74709) ADC_ENHANCED: Raw ADC: 3288 (2.786V)[0m
+[0;32mI (74709) ADC_ENHANCED: Oversampled: 3392.9 (2.842V)[0m
+[0;32mI (74719) ADC_ENHANCED: Filtered: 3368.2 (2.830V)[0m
+[0;32mI (74719) ADC_ENHANCED: [0m
+[0;32mI (76719) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (76719) ADC_ENHANCED: Raw ADC: 3407 (2.850V)[0m
+[0;32mI (76719) ADC_ENHANCED: Oversampled: 3386.1 (2.839V)[0m
+[0;32mI (76729) ADC_ENHANCED: Filtered: 3375.8 (2.833V)[0m
+[0;32mI (76729) ADC_ENHANCED: [0m
+[0;32mI (78729) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (78729) ADC_ENHANCED: Raw ADC: 3277 (2.780V)[0m
+[0;32mI (78729) ADC_ENHANCED: Oversampled: 3480.1 (2.888V)[0m
+[0;32mI (78739) ADC_ENHANCED: Filtered: 3389.6 (2.841V)[0m
+[0;32mI (78739) ADC_ENHANCED: [0m
+[0;32mI (80739) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (80739) ADC_ENHANCED: Raw ADC: 3378 (2.835V)[0m
+[0;32mI (80739) ADC_ENHANCED: Oversampled: 3364.4 (2.827V)[0m
+[0;32mI (80749) ADC_ENHANCED: Filtered: 3389.1 (2.841V)[0m
+[0;32mI (80749) ADC_ENHANCED: [0m
+[0;32mI (82749) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (82749) ADC_ENHANCED: Raw ADC: 3489 (2.892V)[0m
+[0;32mI (82749) ADC_ENHANCED: Oversampled: 3469.2 (2.882V)[0m
+[0;32mI (82759) ADC_ENHANCED: Filtered: 3399.2 (2.846V)[0m
+[0;32mI (82759) ADC_ENHANCED: [0m
+[0;32mI (84759) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (84759) ADC_ENHANCED: Raw ADC: 3344 (2.817V)[0m
+[0;32mI (84759) ADC_ENHANCED: Oversampled: 3326.3 (2.807V)[0m
+[0;32mI (84769) ADC_ENHANCED: Filtered: 3396.4 (2.844V)[0m
+[0;32mI (84769) ADC_ENHANCED: [0m
+[0;32mI (86769) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (86769) ADC_ENHANCED: Raw ADC: 3422 (2.858V)[0m
+[0;32mI (86769) ADC_ENHANCED: Oversampled: 3401.7 (2.847V)[0m
+[0;32mI (86779) ADC_ENHANCED: Filtered: 3403.9 (2.848V)[0m
+[0;32mI (86779) ADC_ENHANCED: [0m
+[0;32mI (88779) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (88779) ADC_ENHANCED: Raw ADC: 3506 (2.901V)[0m
+[0;32mI (88779) ADC_ENHANCED: Oversampled: 3487.8 (2.891V)[0m
+[0;32mI (88789) ADC_ENHANCED: Filtered: 3412.3 (2.853V)[0m
+[0;32mI (88789) ADC_ENHANCED: [0m
+[0;32mI (90789) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (90789) ADC_ENHANCED: Raw ADC: 3333 (2.811V)[0m
+[0;32mI (90789) ADC_ENHANCED: Oversampled: 3318.2 (2.803V)[0m
+[0;32mI (90799) ADC_ENHANCED: Filtered: 3399.4 (2.846V)[0m
+[0;32mI (90799) ADC_ENHANCED: [0m
+[0;32mI (92799) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (92799) ADC_ENHANCED: Raw ADC: 3422 (2.858V)[0m
+[0;32mI (92799) ADC_ENHANCED: Oversampled: 3405.3 (2.849V)[0m
+[0;32mI (92809) ADC_ENHANCED: Filtered: 3403.2 (2.848V)[0m
+[0;32mI (92809) ADC_ENHANCED: [0m
+[0;32mI (94809) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (94809) ADC_ENHANCED: Raw ADC: 3508 (2.902V)[0m
+[0;32mI (94809) ADC_ENHANCED: Oversampled: 3483.5 (2.889V)[0m
+[0;32mI (94819) ADC_ENHANCED: Filtered: 3412.2 (2.853V)[0m
+[0;32mI (94819) ADC_ENHANCED: [0m
+[0;32mI (96819) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (96819) ADC_ENHANCED: Raw ADC: 3335 (2.812V)[0m
+[0;32mI (96819) ADC_ENHANCED: Oversampled: 3317.3 (2.802V)[0m
+[0;32mI (96829) ADC_ENHANCED: Filtered: 3405.4 (2.849V)[0m
+[0;32mI (96829) ADC_ENHANCED: [0m
+[0;32mI (98829) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (98829) ADC_ENHANCED: Raw ADC: 3396 (2.844V)[0m
+[0;32mI (98829) ADC_ENHANCED: Oversampled: 3377.4 (2.834V)[0m
+[0;32mI (98839) ADC_ENHANCED: Filtered: 3395.1 (2.844V)[0m
+[0;32mI (98839) ADC_ENHANCED: [0m
+[0;32mI (100839) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (100839) ADC_ENHANCED: Raw ADC: 3472 (2.884V)[0m
+[0;32mI (100839) ADC_ENHANCED: Oversampled: 3451.6 (2.873V)[0m
+[0;32mI (100849) ADC_ENHANCED: Filtered: 3403.8 (2.848V)[0m
+[0;32mI (100849) ADC_ENHANCED: [0m
+[0;32mI (102849) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (102849) ADC_ENHANCED: Raw ADC: 3280 (2.782V)[0m
+[0;32mI (102849) ADC_ENHANCED: Oversampled: 3463.3 (2.879V)[0m
+[0;32mI (102859) ADC_ENHANCED: Filtered: 3403.2 (2.848V)[0m
+[0;32mI (102859) ADC_ENHANCED: [0m
+[0;32mI (104859) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (104859) ADC_ENHANCED: Raw ADC: 3323 (2.806V)[0m
+[0;32mI (104859) ADC_ENHANCED: Oversampled: 3309.0 (2.797V)[0m
+[0;32mI (104869) ADC_ENHANCED: Filtered: 3401.5 (2.847V)[0m
+[0;32mI (104869) ADC_ENHANCED: [0m
+[0;32mI (106869) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (106869) ADC_ENHANCED: Raw ADC: 3354 (2.822V)[0m
+[0;32mI (106869) ADC_ENHANCED: Oversampled: 3336.8 (2.813V)[0m
+[0;32mI (106879) ADC_ENHANCED: Filtered: 3395.0 (2.844V)[0m
+[0;32mI (106879) ADC_ENHANCED: [0m
+[0;32mI (108879) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (108879) ADC_ENHANCED: Raw ADC: 3364 (2.827V)[0m
+[0;32mI (108879) ADC_ENHANCED: Oversampled: 3347.4 (2.818V)[0m
+[0;32mI (108889) ADC_ENHANCED: Filtered: 3381.0 (2.836V)[0m
+[0;32mI (108889) ADC_ENHANCED: [0m
+[0;32mI (110889) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (110889) ADC_ENHANCED: Raw ADC: 3408 (2.851V)[0m
+[0;32mI (110889) ADC_ENHANCED: Oversampled: 3392.8 (2.842V)[0m
+[0;32mI (110899) ADC_ENHANCED: Filtered: 3388.4 (2.840V)[0m
+[0;32mI (110899) ADC_ENHANCED: [0m
+[0;32mI (112899) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (112899) ADC_ENHANCED: Raw ADC: 3479 (2.887V)[0m
+[0;32mI (112899) ADC_ENHANCED: Oversampled: 3461.2 (2.878V)[0m
+[0;32mI (112909) ADC_ENHANCED: Filtered: 3394.0 (2.843V)[0m
+[0;32mI (112909) ADC_ENHANCED: [0m
+[0;32mI (114909) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (114909) ADC_ENHANCED: Raw ADC: 3328 (2.808V)[0m
+[0;32mI (114909) ADC_ENHANCED: Oversampled: 3311.3 (2.799V)[0m
+[0;32mI (114919) ADC_ENHANCED: Filtered: 3376.8 (2.834V)[0m
+[0;32mI (114919) ADC_ENHANCED: [0m
+[0;32mI (116919) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (116919) ADC_ENHANCED: Raw ADC: 3344 (2.817V)[0m
+[0;32mI (116919) ADC_ENHANCED: Oversampled: 3324.0 (2.806V)[0m
+[0;32mI (116929) ADC_ENHANCED: Filtered: 3377.5 (2.834V)[0m
+[0;32mI (116929) ADC_ENHANCED: [0m
+[0;32mI (118929) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (118929) ADC_ENHANCED: Raw ADC: 3353 (2.822V)[0m
+[0;32mI (118929) ADC_ENHANCED: Oversampled: 3337.4 (2.813V)[0m
+[0;32mI (118939) ADC_ENHANCED: Filtered: 3373.5 (2.832V)[0m
+[0;32mI (118939) ADC_ENHANCED: [0m
+[0;32mI (120939) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (120939) ADC_ENHANCED: Raw ADC: 3367 (2.829V)[0m
+[0;32mI (120939) ADC_ENHANCED: Oversampled: 3351.1 (2.821V)[0m
+[0;32mI (120949) ADC_ENHANCED: Filtered: 3363.4 (2.827V)[0m
+[0;32mI (120949) ADC_ENHANCED: [0m
+[0;32mI (122949) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (122949) ADC_ENHANCED: Raw ADC: 3367 (2.829V)[0m
+[0;32mI (122949) ADC_ENHANCED: Oversampled: 3351.4 (2.821V)[0m
+[0;32mI (122959) ADC_ENHANCED: Filtered: 3352.2 (2.821V)[0m
+[0;32mI (122959) ADC_ENHANCED: [0m
+[0;32mI (124959) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (124959) ADC_ENHANCED: Raw ADC: 3372 (2.832V)[0m
+[0;32mI (124959) ADC_ENHANCED: Oversampled: 3350.6 (2.820V)[0m
+[0;32mI (124969) ADC_ENHANCED: Filtered: 3356.4 (2.823V)[0m
+[0;32mI (124969) ADC_ENHANCED: [0m
+[0;32mI (126969) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (126969) ADC_ENHANCED: Raw ADC: 3350 (2.820V)[0m
+[0;32mI (126969) ADC_ENHANCED: Oversampled: 3332.5 (2.810V)[0m
+[0;32mI (126979) ADC_ENHANCED: Filtered: 3356.0 (2.823V)[0m
+[0;32mI (126979) ADC_ENHANCED: [0m
+[0;32mI (128979) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (128979) ADC_ENHANCED: Raw ADC: 3339 (2.814V)[0m
+[0;32mI (128979) ADC_ENHANCED: Oversampled: 3321.2 (2.804V)[0m
+[0;32mI (128989) ADC_ENHANCED: Filtered: 3353.4 (2.822V)[0m
+[0;32mI (128989) ADC_ENHANCED: [0m
+[0;32mI (130989) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (130989) ADC_ENHANCED: Raw ADC: 3312 (2.799V)[0m
+[0;32mI (130989) ADC_ENHANCED: Oversampled: 3295.6 (2.790V)[0m
+[0;32mI (130999) ADC_ENHANCED: Filtered: 3343.6 (2.816V)[0m
+[0;32mI (130999) ADC_ENHANCED: [0m
+[0;32mI (132999) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (132999) ADC_ENHANCED: Raw ADC: 3277 (2.780V)[0m
+[0;32mI (132999) ADC_ENHANCED: Oversampled: 3473.5 (2.884V)[0m
+[0;32mI (133009) ADC_ENHANCED: Filtered: 3344.9 (2.817V)[0m
+[0;32mI (133009) ADC_ENHANCED: [0m
+[0;32mI (135009) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (135009) ADC_ENHANCED: Raw ADC: 3466 (2.881V)[0m
+[0;32mI (135009) ADC_ENHANCED: Oversampled: 3443.5 (2.869V)[0m
+[0;32mI (135019) ADC_ENHANCED: Filtered: 3358.1 (2.824V)[0m
+[0;32mI (135019) ADC_ENHANCED: [0m
+[0;32mI (137019) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (137019) ADC_ENHANCED: Raw ADC: 3397 (2.845V)[0m
+[0;32mI (137019) ADC_ENHANCED: Oversampled: 3380.5 (2.836V)[0m
+[0;32mI (137029) ADC_ENHANCED: Filtered: 3363.7 (2.827V)[0m
+[0;32mI (137029) ADC_ENHANCED: [0m
+[0;32mI (139029) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (139029) ADC_ENHANCED: Raw ADC: 3344 (2.817V)[0m
+[0;32mI (139029) ADC_ENHANCED: Oversampled: 3325.2 (2.807V)[0m
+[0;32mI (139039) ADC_ENHANCED: Filtered: 3362.5 (2.826V)[0m
+[0;32mI (139039) ADC_ENHANCED: [0m
+[0;32mI (141039) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (141039) ADC_ENHANCED: Raw ADC: 3280 (2.782V)[0m
+[0;32mI (141039) ADC_ENHANCED: Oversampled: 3468.4 (2.882V)[0m
+[0;32mI (141049) ADC_ENHANCED: Filtered: 3374.3 (2.833V)[0m
+[0;32mI (141049) ADC_ENHANCED: [0m
+[0;32mI (143049) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (143049) ADC_ENHANCED: Raw ADC: 3440 (2.867V)[0m
+[0;32mI (143049) ADC_ENHANCED: Oversampled: 3421.9 (2.857V)[0m
+[0;32mI (143059) ADC_ENHANCED: Filtered: 3381.3 (2.836V)[0m
+[0;32mI (143059) ADC_ENHANCED: [0m
+[0;32mI (145059) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (145059) ADC_ENHANCED: Raw ADC: 3343 (2.816V)[0m
+[0;32mI (145059) ADC_ENHANCED: Oversampled: 3324.9 (2.806V)[0m
+[0;32mI (145069) ADC_ENHANCED: Filtered: 3378.7 (2.835V)[0m
+[0;32mI (145069) ADC_ENHANCED: [0m
+[0;32mI (147069) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (147069) ADC_ENHANCED: Raw ADC: 3459 (2.877V)[0m
+[0;32mI (147069) ADC_ENHANCED: Oversampled: 3441.9 (2.868V)[0m
+[0;32mI (147079) ADC_ENHANCED: Filtered: 3389.7 (2.841V)[0m
+[0;32mI (147079) ADC_ENHANCED: [0m
+[0;32mI (149079) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (149079) ADC_ENHANCED: Raw ADC: 3307 (2.797V)[0m
+[0;32mI (149079) ADC_ENHANCED: Oversampled: 3290.6 (2.787V)[0m
+[0;32mI (149089) ADC_ENHANCED: Filtered: 3386.6 (2.839V)[0m
+[0;32mI (149089) ADC_ENHANCED: [0m
+[0;32mI (151089) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (151089) ADC_ENHANCED: Raw ADC: 3408 (2.851V)[0m
+[0;32mI (151089) ADC_ENHANCED: Oversampled: 3392.5 (2.842V)[0m
+[0;32mI (151099) ADC_ENHANCED: Filtered: 3396.3 (2.844V)[0m
+[0;32mI (151099) ADC_ENHANCED: [0m
+[0;32mI (153099) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (153099) ADC_ENHANCED: Raw ADC: 3280 (2.782V)[0m
+[0;32mI (153099) ADC_ENHANCED: Oversampled: 3451.6 (2.873V)[0m
+[0;32mI (153109) ADC_ENHANCED: Filtered: 3394.1 (2.843V)[0m
+[0;32mI (153109) ADC_ENHANCED: [0m
+[0;32mI (155109) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (155109) ADC_ENHANCED: Raw ADC: 3341 (2.815V)[0m
+[0;32mI (155109) ADC_ENHANCED: Oversampled: 3327.0 (2.808V)[0m
+[0;32mI (155119) ADC_ENHANCED: Filtered: 3382.5 (2.837V)[0m
+[0;32mI (155119) ADC_ENHANCED: [0m
+[0;32mI (157119) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (157119) ADC_ENHANCED: Raw ADC: 3431 (2.863V)[0m
+[0;32mI (157119) ADC_ENHANCED: Oversampled: 3411.4 (2.852V)[0m
+[0;32mI (157129) ADC_ENHANCED: Filtered: 3385.6 (2.839V)[0m
+[0;32mI (157129) ADC_ENHANCED: [0m
+[0;32mI (159129) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (159129) ADC_ENHANCED: Raw ADC: 3280 (2.782V)[0m
+[0;32mI (159129) ADC_ENHANCED: Oversampled: 3481.1 (2.888V)[0m
+[0;32mI (159139) ADC_ENHANCED: Filtered: 3401.1 (2.847V)[0m
+[0;32mI (159139) ADC_ENHANCED: [0m
+[0;32mI (161139) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (161139) ADC_ENHANCED: Raw ADC: 3349 (2.819V)[0m
+[0;32mI (161139) ADC_ENHANCED: Oversampled: 3336.0 (2.812V)[0m
+[0;32mI (161149) ADC_ENHANCED: Filtered: 3387.9 (2.840V)[0m
+[0;32mI (161149) ADC_ENHANCED: [0m
+[0;32mI (163149) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (163149) ADC_ENHANCED: Raw ADC: 3440 (2.867V)[0m
+[0;32mI (163149) ADC_ENHANCED: Oversampled: 3417.0 (2.855V)[0m
+[0;32mI (163159) ADC_ENHANCED: Filtered: 3387.4 (2.840V)[0m
+[0;32mI (163159) ADC_ENHANCED: [0m
+[0;32mI (165159) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (165159) ADC_ENHANCED: Raw ADC: 3283 (2.783V)[0m
+[0;32mI (165159) ADC_ENHANCED: Oversampled: 3427.3 (2.861V)[0m
+[0;32mI (165169) ADC_ENHANCED: Filtered: 3397.6 (2.845V)[0m
+[0;32mI (165169) ADC_ENHANCED: [0m
+[0;32mI (167169) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (167169) ADC_ENHANCED: Raw ADC: 3354 (2.822V)[0m
+[0;32mI (167169) ADC_ENHANCED: Oversampled: 3340.3 (2.815V)[0m
+[0;32mI (167179) ADC_ENHANCED: Filtered: 3387.5 (2.840V)[0m
+[0;32mI (167179) ADC_ENHANCED: [0m
+[0;32mI (169179) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (169179) ADC_ENHANCED: Raw ADC: 3387 (2.840V)[0m
+[0;32mI (169179) ADC_ENHANCED: Oversampled: 3370.8 (2.831V)[0m
+[0;32mI (169189) ADC_ENHANCED: Filtered: 3395.5 (2.844V)[0m
+[0;32mI (169189) ADC_ENHANCED: [0m
+[0;32mI (171189) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (171189) ADC_ENHANCED: Raw ADC: 3418 (2.856V)[0m
+[0;32mI (171189) ADC_ENHANCED: Oversampled: 3400.9 (2.846V)[0m
+[0;32mI (171199) ADC_ENHANCED: Filtered: 3396.3 (2.844V)[0m
+[0;32mI (171199) ADC_ENHANCED: [0m
